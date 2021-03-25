@@ -1,0 +1,14 @@
+- id: COB:0000022
+  label: organism
+  definition: >-
+    foo
+  has evaluation:
+    contributor: cjm
+    scope evaluation:
+      score: 1.0
+      description: >-
+        the class is in scope for COB
+    scientific usage evaluation:
+      score: 1.0
+      description: >-
+        the concept is in use

@@ -1,0 +1,138 @@
+id: https://w3id.org/my_schema
+name: my_schema
+description: >-
+  My Schema Description
+imports:
+ - biolinkml:types
+default_curi_maps:
+    - semweb_context
+prefixes:
+  biolinkml: https://w3id.org/biolink/biolinkml/
+  my_schema: https://w3id.org/mixs/my_schema/
+default_prefix: my_schema
+
+emit_prefixes:
+  - meta
+  - rdf
+  - rdfs
+  - xsd
+  - skos
+  - dcterms
+  - OIO
+  - owl
+  - pav
+
+slots:
+  id:
+    identifier: true
+  label:
+    description: >-
+      human readable label
+    slot_uri: rdfs:label
+  description:
+    description: >-
+      human readable label
+    slot_uri: dcterms:description
+  definition:
+    slot_uri: IAO:0000115
+
+  score:
+    range: float
+
+  has assessment:
+    range: assessment
+
+  contributor:
+    slot_uri: dcterms:contributor
+
+  metric evaluation:
+    abstract: true
+
+  scope evaluation:
+    is_a: metric evaluation
+
+  scientific usage evaluation:
+    is_a: metric evaluation
+
+  upper level coherence evaluation:
+    is_a: metric evaluation
+
+classes:
+  ontology term:
+    slots:
+      - id
+      - label
+
+  assessment:
+    slots:
+      - contributor
+      - description
+      - scope evaluation
+      - scientific usage evaluation
+      
+  class rubric:
+    slots:
+      - description
+      - score
+
+  scope:
+    is_a: class rubric
+    description: >-
+      foo
+
+  scientific usage:
+    is_a: class rubric
+    description: >-
+      foo
+
+  upper level coherence:
+    is_a: class rubric
+    description: >-
+      foo
+
+  scientifically useful:
+    is_a: class rubric
+    description: >-
+      foo
+
+  query utility:
+    is_a: class rubric
+    description: >-
+      foo
+
+  logical utility:
+    is_a: class rubric
+    description: >-
+      foo
+
+  database coherence:
+    is_a: class rubric
+    description: >-
+      foo
+
+  operationality:
+    is_a: class rubric
+    description: >-
+      foo
+
+  strategy for completeness:
+    is_a: class rubric
+    description: >-
+      foo
+
+  consistency with existing terms:
+    is_a: class rubric
+    description: >-
+      foo
+
+  adherence to design pattern:
+    is_a: class rubric
+    description: >-
+      foo
+
+  balanced:
+    is_a: class rubric
+    description: >-
+      foo
+  
+
