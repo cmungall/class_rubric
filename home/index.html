@@ -50,6 +50,36 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Home</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rubrics">rubrics</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#scope">scope</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#usage-in-literature">usage in literature</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#adherence-to-upper-level-concepts">adherence to upper level concepts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#does-it-divide-the-world-in-a-way-that-makes-sense-for-domain-scientists">does it divide the world in a way that makes sense for domain scientists</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#utility-for-querying">utility for querying</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#logical-utility">logical utility</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#database-coherence">database coherence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operationality-can-it-be-populated-consistently">operationality: can it be populated consistently</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#completeness-do-you-have-a-strategy-for-ensuring-consistent-population">completeness: do you have a strategy for ensuring consistent population</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#consistency-with-existing-terms">consistency with existing terms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#balanced">balanced</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fits-with-existing-design-patterns">fits with existing design patterns</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#single-child">single child</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -93,8 +123,29 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="introduction">Introduction</h1>
-<p>about my_schema</p>
+                <h1 id="ontology-class-rubrics">ontology class rubrics</h1>
+<p>these rubrics are to provide a framework for systematically evaluating whether an individual term should be included in an ontology. </p>
+<p>it is designed to provide a flexible framework. not every person or ontology group will agree on how to weigh each rubric. </p>
+<p>it is also designed to be technically flexible. a complete schema is provided, and evaluation of a class can be encoded in json or rdf. however, it can also be used ina lightweight fashion with google sheets or excel, or as tables in a manuscript. or in fact it can be simply used as a framework for talking and discussing about terms.</p>
+<h2 id="rubrics">rubrics</h2>
+<h3 id="scope">scope</h3>
+<h3 id="usage-in-literature">usage in literature</h3>
+<p>does the class correspond to a concept that has a distinct name or set of names in the literature?</p>
+<h3 id="adherence-to-upper-level-concepts">adherence to upper level concepts</h3>
+<p>different ontologies may adhere to different upper ontologies, which may be at different levels of specificity. it is up to each ontology to decide which upper ontologies, if any, to commit to. whichever choice is made, this should be clearly articulated in the ontology documentation. </p>
+<p>GO commits to its own subdivision into molecular function, biological process, and cellular component. many anatomy ontologies commit to a broad distinction between anatomical entities and developmental stages. in addition there may be further commitment to mid upper ontologies like caro or cob, and beyond that to philosophical ontologies like bfo.</p>
+<h3 id="does-it-divide-the-world-in-a-way-that-makes-sense-for-domain-scientists">does it divide the world in a way that makes sense for domain scientists</h3>
+<p>this is particularly important for terms that are higher up in the class hierarchy</p>
+<h3 id="utility-for-querying">utility for querying</h3>
+<h3 id="logical-utility">logical utility</h3>
+<p>does avoiding including this class result in awkward repetition of expressions?</p>
+<h3 id="database-coherence">database coherence</h3>
+<h3 id="operationality-can-it-be-populated-consistently">operationality: can it be populated consistently</h3>
+<h3 id="completeness-do-you-have-a-strategy-for-ensuring-consistent-population">completeness: do you have a strategy for ensuring consistent population</h3>
+<h3 id="consistency-with-existing-terms">consistency with existing terms</h3>
+<h3 id="balanced">balanced</h3>
+<h3 id="fits-with-existing-design-patterns">fits with existing design patterns</h3>
+<h3 id="single-child">single child</h3>
               
             </div>
           </div>
